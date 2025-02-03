@@ -34,7 +34,7 @@ def init_weights(m):
         if m.bias is not None:
             nn.init.zeros_(m.bias)
 
-def train(model, train_loader, criterion, optimizer, epochs=5):
+def train(model, train_loader, criterion, optimizer, epochs=3):
     model.apply(init_weights)
     model.train()  
 
