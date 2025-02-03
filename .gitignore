@@ -1,0 +1,8 @@
+env/
+*.pt
+*.pkl
+*.h5
+*.zip
+*.tar.gz
+__pycache__/
+.DS_Store
