@@ -1,3 +1,4 @@
+mnist_png/
 env/
 *.pt
 *.pkl
