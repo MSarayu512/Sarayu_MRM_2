@@ -1,4 +1,6 @@
 mnist_png/
+mnist_png/testing/
+mnist_png/training/
 env/
 *.pt
 *.pkl
