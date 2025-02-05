@@ -7,12 +7,12 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix, f1_score
 
 model = ConvNet()
-model.load_state_dict(torch.load('/Users/sarayu.madakasira/CNN/model.pth', map_location=torch.device('cpu')))  # Load weights from saved model file
+model.load_state_dict(torch.load('/Users/sarayu.madakasira/CNN/model.pth', map_location=torch.device('cpu')))  
 model.eval()  
 
 # Define transformations
 transform = transforms.Compose([
-    transforms.Grayscale(num_output_channels=1),  # Ensure it's a 1-channel (grayscale) image
+    transforms.Grayscale(num_output_channels=1),  
     transforms.ToTensor(),
     transforms.Normalize((0.5,), (0.5,))
 ])
