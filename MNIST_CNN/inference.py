@@ -25,7 +25,7 @@ def make_inference(model, test_loader):
     total = 0
     with torch.no_grad():  
         for images, labels in test_loader:
-            outputs = model(images)  
+            outputs = model(images)    
             _, predicted = torch.max(outputs, 1)  
             total += labels.size(0) 
             correct += (predicted == labels).sum().item()
