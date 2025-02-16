@@ -18,7 +18,7 @@ transform = transforms.Compose([
 ])
 
 test_dataset = datasets.ImageFolder(root="/Users/sarayu.madakasira/CNN/mnist_png/testing", transform=transform)
-test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False)
 
 def make_inference(model, test_loader):
     correct = 0
